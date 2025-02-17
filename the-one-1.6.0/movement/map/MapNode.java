@@ -25,6 +25,8 @@ public class MapNode implements Comparable<MapNode> {
 	private Vector<MapNode> neighbors;
 	// bit mask of map node's types or 0 if no type's are defined
 	private int type;
+	private double communityDensity;
+	private boolean isCommunity;
 	
 	/**
 	 * Constructor. Creates a map node to a location.
@@ -33,6 +35,9 @@ public class MapNode implements Comparable<MapNode> {
 	public MapNode(Coord location) {
 		this.location = location;
 		this.neighbors = new Vector<MapNode>();
+		this.communityDensity = 0.0;
+		this.isCommunity = false;
+		
 		type = 0;
 	}
 	
@@ -126,6 +131,42 @@ public class MapNode implements Comparable<MapNode> {
 	public List<MapNode> getNeighbors() {
 		return neighbors;
 	}
+	
+	/**
+	 * Returns the CommunityDensity
+	 * @return the CommunityDensity
+	 */
+	public double getCommunityDensity() {
+		return communityDensity;
+	}
+
+	/**
+	 * set the community Density of this node.
+	 * @param cd
+	 */
+	public void setCommunityDensity(double cd) {
+		this.communityDensity = cd;
+		this.location.setDensity(cd);
+		setIsCommunity(true);
+	}
+	
+	/**
+	 * Returns a boolean indicating whether the community belongs or not.
+	 * @return a boolean indicating whether the community belongs or not
+	 */
+	
+	public boolean isCommunity() {
+		return isCommunity;
+	}
+
+	/**
+	 * set the isCommunity of this node.
+	 * @param bool
+	 */
+	public void setIsCommunity(boolean bool){
+		this.isCommunity = bool;
+	}
+
 	
 	/**
 	 * Returns a String representation of the map node
