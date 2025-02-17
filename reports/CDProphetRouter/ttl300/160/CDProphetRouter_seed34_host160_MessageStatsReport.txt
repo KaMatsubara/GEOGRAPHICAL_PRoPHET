@@ -1,0 +1,20 @@
+Message stats for scenario CDProphetRouter_seed34_host160
+sim_time: 43200.1000
+created: 1458
+started: 6360
+relayed: 5722
+aborted: 638
+dropped: 6093
+removed: 0
+delivered: 491
+delivery_prob: 0.3368
+response_prob: 0.0000
+overhead_ratio: 10.6538
+latency_avg: 3086.0464
+latency_med: 1452.8000
+hopcount_avg: 1.1242
+hopcount_med: 1
+buffertime_avg: 3001.5349
+buffertime_med: 178.9000
+rtt_avg: NaN
+rtt_med: NaN

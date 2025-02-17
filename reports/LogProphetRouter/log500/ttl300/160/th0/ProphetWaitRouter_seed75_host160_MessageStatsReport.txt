@@ -1,0 +1,20 @@
+Message stats for scenario ProphetWaitRouter_seed75_host160
+sim_time: 43200.1000
+created: 1458
+started: 193996
+relayed: 149706
+aborted: 44275
+dropped: 149966
+removed: 0
+delivered: 256
+delivery_prob: 0.1756
+response_prob: 0.0000
+overhead_ratio: 583.7891
+latency_avg: 1679.5918
+latency_med: 781.4000
+hopcount_avg: 2.8477
+hopcount_med: 2
+buffertime_avg: 225.0970
+buffertime_med: 75.7000
+rtt_avg: NaN
+rtt_med: NaN

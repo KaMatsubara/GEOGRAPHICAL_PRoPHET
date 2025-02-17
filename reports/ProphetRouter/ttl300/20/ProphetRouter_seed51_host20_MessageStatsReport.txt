@@ -1,0 +1,20 @@
+Message stats for scenario ProphetRouter_seed51_host20
+sim_time: 43200.1000
+created: 1464
+started: 5163
+relayed: 4583
+aborted: 580
+dropped: 5626
+removed: 0
+delivered: 303
+delivery_prob: 0.2070
+response_prob: 0.0000
+overhead_ratio: 14.1254
+latency_avg: 984.9380
+latency_med: 526.3000
+hopcount_avg: 1.6964
+hopcount_med: 1
+buffertime_avg: 879.3915
+buffertime_med: 595.4000
+rtt_avg: NaN
+rtt_med: NaN
